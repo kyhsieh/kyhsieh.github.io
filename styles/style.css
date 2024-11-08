@@ -1,0 +1,72 @@
+/*
+This whole is call a rule(ruleset), composed by
+selector {
+     property: property values; (this is called one "declaration")
+     more declaration...;
+}
+
+more details of CSS selectors:
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors
+
+*/
+
+html {
+    font-size: 14px;
+    font-family: "Open sans", sans-serif;
+    background-color: #00539f;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ff9500;
+    padding: 20px 20px 20px 20px;
+    border: 5px solid black;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black;
+    /* horizontal shadow offset, vertical shadow offset, blur radius, shadow color */
+}
+
+img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* element selector, to select elements of specified types*/
+/* p {
+    color: blue;
+} */
+
+/* id selector, to select elements with the specified id attribute */
+/* #my-id {
+    color: red;
+} */
+
+/* class selector, to select elements with the specified class attribute */
+/* .my-class {
+    color: green;
+} */
+
+/* atrribute selector, to select elements containing the specified attribute
+   for example, below selector selects <img alt="..." />
+*/
+/* img[src="images/fox.png"] {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+} */
+
+/* Pseudo-class selector, to select elements which is in specified states
+   for example, below selector selects <a> only in mouse hover state
+*/
+/* a:hover {
+    color: peru;
+} */
