@@ -22,6 +22,13 @@ body {
     background-color: #ff9500;
     padding: 20px 20px 20px 20px;
     border: 5px solid black;
+
+    /* background-attachment: fixed; */
+    /* In 4-value shorthands like padding and margin, the values are applied
+    in the order top, right, bottom, left (clockwise from the top). There are also other
+    shorthand types, for example 2-value shorthands, which set padding/margin
+    for top/bottom, then left/right */
+    /* padding: 10px 15px 15px 5px; */
 }
 
 h1 {
@@ -39,6 +46,7 @@ img {
     display: block;
     margin: 0 auto;
 }
+
 
 /* element selector, to select elements of specified types*/
 /* p {
@@ -64,9 +72,19 @@ img {
     margin: 0 auto;
 } */
 
-/* Pseudo-class selector, to select elements which is in specified states
+/* state selector, to select elements which is in specified states
    for example, below selector selects <a> only in mouse hover state
 */
 /* a:hover {
     color: peru;
+} */
+
+/* descendant combinator, selects "any" <p> that is inside a <address> */
+/* address p {
+    color: palevioletred;
+} */
+
+/* next-sibling combinator, selects only the <p> that is "right after" <address> */
+/* address+p {
+    color: brown;
 } */
