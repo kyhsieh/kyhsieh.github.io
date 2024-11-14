@@ -4,7 +4,7 @@ function setUserName() {
         userName = prompt("input your name:")
     }
     localStorage.setItem("qqUser", userName)
-    document.querySelector("h1").textContent = "HELLO " + userName
+    document.querySelector("h1").textContent = "Hello " + userName
 }
 
 
@@ -13,7 +13,7 @@ if (!localStorage.getItem("qqUser")) {
 }
 else {
     const userName = localStorage.getItem("qqUser")
-    document.querySelector("h1").textContent = "HELLO " + userName
+    document.querySelector("h1").textContent = "Hello " + userName
 }
 
 const button = document.getElementById("change-name")
