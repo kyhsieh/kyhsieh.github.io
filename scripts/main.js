@@ -4,25 +4,29 @@ function setUserName() {
         userName = prompt("input your name:")
     }
     localStorage.setItem("qqUser", userName)
-    document.querySelector("h1").textContent = "Hello " + userName
+    document.querySelector("h1").textContent = "HELLO " + userName
 }
 
-
-
-let hedingText = document.querySelector("h1")
-hedingText.onclick = () => {
-    alert("I told you don't click on me :P")
-}
 
 if (!localStorage.getItem("qqUser")) {
     setUserName()
 }
 else {
     const userName = localStorage.getItem("qqUser")
-    document.querySelector("h1").textContent = "Hello " + userName
+    document.querySelector("h1").textContent = "HELLO " + userName
 }
 
-let button = document.querySelector("button")
+const button = document.getElementById("change-name")
 button.onclick = () => {
-    setUserName()
+    setUserName();
 }
+
+let changeNameButton = document.getElementById("change-title")
+changeNameButton.addEventListener("click", () => {
+    if (document.title === "abc")
+        document.title = "def"
+    else
+        document.title = "abc"
+})
+
+console.log("js is loaded")
